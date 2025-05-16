@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ENZO | Eryk Moczko - Cyberlux Experience</title>
+    <title>ENZO | Eryk Moczko - Rainforest Experience</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Orbitron:wght@700;900&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body data-scroll-container>
-    <!-- Particle Background -->
-    <div id="particles-js"></div>
-
-    <!-- Cyber Grid Overlay -->
-    <div class="cyber-grid"></div>
+    <!-- Rain Background -->
+    <div class="rain-container" id="rain"></div>
+    
+    <!-- Plant Overlay -->
+    <div class="plant-overlay"></div>
+    
+    <!-- Noise Texture -->
+    <div class="noise-texture"></div>
 
     <!-- HUD Elements -->
     <div class="hud-element hud-top-left">
         <div class="hud-line"></div>
-        <span>ENZO SYSTEM</span>
+        <span>RAINFOREST MODE</span>
     </div>
     <div class="hud-element hud-top-right">
         <span>BPM: 142</span>
@@ -33,7 +36,7 @@
             <div class="hero-overlay"></div>
             
             <div class="hero-content">
-                <h1 class="cyber-glitch" data-text="ENZO">ENZO</h1>
+                <h1 class="botanic-glitch" data-text="ENZO">ENZO</h1>
                 <p class="subtitle">Eryk Moczko</p>
                 <div class="typing-text">
                     <span class="typed"></span>
@@ -44,11 +47,11 @@
                     <div class="scroll-circle">
                         <div class="scroll-arrow"></div>
                     </div>
-                    <span>SCROLL</span>
+                    <span>EXPLORE</span>
                 </div>
             </div>
             
-            <div class="ferrari-3d"></div>
+            <div class="ferrari-jungle"></div>
             
             <div class="hero-stats">
                 <div class="stat">
@@ -67,7 +70,7 @@
         </section>
 
         <!-- Navigation -->
-        <nav class="cyber-nav">
+        <nav class="botanic-nav">
             <div class="nav-logo">
                 <span>ENZO</span>
                 <div class="nav-pulse"></div>
@@ -116,10 +119,10 @@
             <div class="about-grid">
                 <div class="about-card">
                     <div class="card-icon">
-                        <i class="fas fa-bolt"></i>
+                        <i class="fas fa-leaf"></i>
                     </div>
                     <h3>ENERGIA</h3>
-                    <p>Mocne trapowe bity połączone z agresywnym flow tworzą energetyczny koktajl.</p>
+                    <p>Mocne trapowe bity połączone z organicznym flow tworzą unikalny klimat.</p>
                     <div class="card-stats">
                         <span>BPM: 142</span>
                         <span>KEY: F#m</span>
@@ -128,10 +131,10 @@
                 
                 <div class="about-card">
                     <div class="card-icon">
-                        <i class="fas fa-car"></i>
+                        <i class="fas fa-tree"></i>
                     </div>
-                    <h3>FERRARI</h3>
-                    <p>Enzo Ferrari jako symbol osiągnięcia szczytu w życiu i karierze.</p>
+                    <h3>NATURA</h3>
+                    <p>Enzo jako symbol harmonii między technologią a naturą.</p>
                     <div class="card-stats">
                         <span>0-100: 3.3s</span>
                         <span>TOP: 350km/h</span>
@@ -140,10 +143,10 @@
                 
                 <div class="about-card">
                     <div class="card-icon">
-                        <i class="fas fa-globe"></i>
+                        <i class="fas fa-globe-americas"></i>
                     </div>
                     <h3>ŚWIAT</h3>
-                    <p>Od Warszawy po Dubaj - globalny styl życia nowej generacji.</p>
+                    <p>Od dżungli po miasta - globalny styl życia w zgodzie z naturą.</p>
                     <div class="card-stats">
                         <span>12 MIAST</span>
                         <span>3 KONTYNENTY</span>
@@ -164,18 +167,18 @@
                 <div class="lyrics-side">
                     <div class="lyrics-highlight active" data-time="0">
                         <div class="highlight-bar"></div>
-                        <p>"Piąta rano odwiózł mnie pan Sasha"</p>
-                        <span class="highlight-tag">REALIA</span>
+                        <p>"Piąta rano, mgła unosi się nad miastem"</p>
+                        <span class="highlight-tag">NATURA</span>
                     </div>
                     <div class="lyrics-highlight" data-time="15">
                         <div class="highlight-bar"></div>
-                        <p>"Ratowałem miasto jak pierdolony Batman"</p>
-                        <span class="highlight-tag">HEROIZM</span>
+                        <p>"Zielone liście w refleksach karoserii"</p>
+                        <span class="highlight-tag">HARMONIA</span>
                     </div>
                     <div class="lyrics-highlight" data-time="30">
                         <div class="highlight-bar"></div>
-                        <p>"Wysadzę chaina w brylantach"</p>
-                        <span class="highlight-tag">LUKSUS</span>
+                        <p>"Deszcz myje ulice jak łzy przeszłości"</p>
+                        <span class="highlight-tag">OCZYSZCZENIE</span>
                     </div>
                 </div>
                 
@@ -202,11 +205,11 @@
                 <div class="vibe-card">
                     <div class="vibe-media">
                         <video loop muted playsinline>
-                            <source src="nightdrive.mp4" type="video/mp4">
+                            <source src="assets/jungle-drive.mp4" type="video/mp4">
                         </video>
                         <div class="vibe-overlay">
-                            <h3>NOCNE JAZDY</h3>
-                            <p>"Zimne ulice Warszawy, łatwo zgubić sen"</p>
+                            <h3>DŻUNGLA</h3>
+                            <p>"Zielone światła przenikają przez liście"</p>
                         </div>
                     </div>
                 </div>
@@ -214,11 +217,11 @@
                 <div class="vibe-card">
                     <div class="vibe-media">
                         <video loop muted playsinline>
-                            <source src="clubscene.mp4" type="video/mp4">
+                            <source src="assets/rain-scene.mp4" type="video/mp4">
                         </video>
                         <div class="vibe-overlay">
-                            <h3>KLUBY</h3>
-                            <p>"Nie lubisz jak znikam wieczorami"</p>
+                            <h3>DESZCZ</h3>
+                            <p>"Krople na szybach jak rytm bitu"</p>
                         </div>
                     </div>
                 </div>
@@ -226,11 +229,11 @@
                 <div class="vibe-card">
                     <div class="vibe-media">
                         <video loop muted playsinline>
-                            <source src="travel.mp4" type="video/mp4">
+                            <source src="assets/sun-rice.mp4" type="video/mp4">
                         </video>
                         <div class="vibe-overlay">
-                            <h3>PODRÓŻE</h3>
-                            <p>"Tokio, Dubaj, Londyn, Paryż, Haga"</p>
+                            <h3>ŚWIT</h3>
+                            <p>"Pierwsze promienie przez mgłę"</p>
                         </div>
                     </div>
                 </div>
@@ -249,7 +252,7 @@
                 <div class="slider-track">
                     <div class="slider-item">
                         <div class="gear-image">
-                            <img src="ferrari-enzo.png" alt="Ferrari Enzo">
+                            <img src="assets/ferrari-jungle.jpg" alt="Ferrari Enzo w dżungli">
                         </div>
                         <div class="gear-info">
                             <h3>FERRARI ENZO</h3>
@@ -260,8 +263,8 @@
                                     <span>3.3s</span>
                                 </div>
                                 <div class="stat">
-                                    <span>CENA</span>
-                                    <span>$3M+</span>
+                                    <span>EMISJA CO2</span>
+                                    <span>450g/km</span>
                                 </div>
                                 <div class="stat">
                                     <span>ROCZNIK</span>
@@ -273,15 +276,15 @@
                     
                     <div class="slider-item">
                         <div class="gear-image">
-                            <img src="dolce-suit.png" alt="Dolce & Gabbana">
+                            <img src="assets/eco-suit.jpg" alt="Eko skóra">
                         </div>
                         <div class="gear-info">
-                            <h3>DOLCE & GABBANA</h3>
-                            <p>Exclusive 2023 Collection</p>
+                            <h3>ECO LEATHER</h3>
+                            <p>Sustainable 2023 Collection</p>
                             <div class="gear-stats">
                                 <div class="stat">
-                                    <span>STYL</span>
-                                    <span>LUXURY</span>
+                                    <span>MATERIAŁ</span>
+                                    <span>ANANAS</span>
                                 </div>
                                 <div class="stat">
                                     <span>CENA</span>
@@ -293,19 +296,19 @@
                     
                     <div class="slider-item">
                         <div class="gear-image">
-                            <img src="rolex.png" alt="Rolex Daytona">
+                            <img src="assets/wood-watch.jpg" alt="Drewniany zegarek">
                         </div>
                         <div class="gear-info">
-                            <h3>ROLEX DAYTONA</h3>
-                            <p>Platinum Ice Blue Dial</p>
+                            <h3>WOODEN TIMEPIECE</h3>
+                            <p>Handcrafted from rainforest oak</p>
                             <div class="gear-stats">
                                 <div class="stat">
                                     <span>LIMIT</span>
-                                    <span>100pcs</span>
+                                    <span>50pcs</span>
                                 </div>
                                 <div class="stat">
                                     <span>CENA</span>
-                                    <span>$75K+</span>
+                                    <span>$25K+</span>
                                 </div>
                             </div>
                         </div>
@@ -321,16 +324,16 @@
         </section>
 
         <!-- Footer -->
-        <footer class="cyber-footer">
+        <footer class="botanic-footer">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h4>ENZO SYSTEM</h4>
+                    <h4>RAINFOREST SYSTEM</h4>
                     <p>Official experience for Eryk Moczko's hit track</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-spotify"></i></a>
                         <a href="#"><i class="fab fa-youtube"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-pagelines"></i></a>
                     </div>
                 </div>
                 
@@ -339,23 +342,23 @@
                     <ul>
                         <li>Prod: XYZ Beats</li>
                         <li>Mix/Master: ABC Studio</li>
-                        <li>Video: DEF Productions</li>
+                        <li>Video: NATURE Productions</li>
                     </ul>
                 </div>
                 
                 <div class="footer-col">
-                    <h4>CONTACT</h4>
+                    <h4>ECO POLICY</h4>
                     <ul>
-                        <li>management@erykmoczko.com</li>
-                        <li>+48 123 456 789</li>
-                        <li>Warsaw, PL</li>
+                        <li>Carbon neutral hosting</li>
+                        <li>10% for rainforest</li>
+                        <li>Sustainable design</li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>© 2023 ENZO EXPERIENCE | All Rights Reserved</p>
-                <p>Created with <i class="fas fa-heart"></i> for rap fans</p>
+                <p>© 2023 ENZO RAINFOREST EXPERIENCE | All Rights Reserved</p>
+                <p>Created with <i class="fas fa-leaf"></i> for nature</p>
             </div>
         </footer>
     </main>
@@ -364,7 +367,6 @@
     <audio id="audio-track" src="enzo.mp3"></audio>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://cdn.jsdelivr.net/npm/wavesurfer.js@6.6.3/dist/wavesurfer.min.js"></script>
